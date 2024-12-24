@@ -1,0 +1,3614 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type='submit'] {
+  display: inline-block;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+  border: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+legend {
+  display: block;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.df {
+  display: flex;
+  align-items: center;
+}
+
+/*----------------------------------------------------------------------------- MAIN STYLES */
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url('../assets/fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f2f2f6;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  color: #282828;
+  font-family: Source Code Pro;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: 64px;
+}
+
+.error-passport {
+  color: red !important;
+  font-size: 6px !important;
+}
+
+.purple-btn {
+  background-color: #6955ea;
+}
+
+.purple-btn:hover {
+  background-color: #5340cc !important;
+}
+
+.btn-41 {
+  background-color: #414141;
+}
+
+.btn-41:hover {
+  background-color: #333333 !important;
+}
+
+.error {
+  color: #e11d48 !important;
+}
+
+span.error {
+  font-size: 12px !important;
+}
+
+input.error {
+  border: 1px solid #e11d48 !important;
+}
+/*----------------------------------------------------------------------------- HEADER STYLES */
+
+header {
+  padding: 18px 0;
+  background-color: #fff;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 140px;
+}
+
+.menu-list {
+  display: flex;
+  gap: 18px;
+}
+
+.menu a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #606060;
+}
+
+.menu a:hover {
+  color: #222;
+}
+
+.login-btn,
+.logout-btn {
+  margin-left: auto;
+  padding: 17px 34px;
+  border-radius: 12px;
+  color: #f6f7ff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+  display: block;
+}
+
+.logout-btn {
+  background-color: #414141;
+}
+
+/*----------------------------------------------------------------------------- OFFER STYLES */
+
+.offer {
+  padding: 125px 0;
+}
+
+.offer .container {
+  background: url(../assets/img/offer-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 70px 40px;
+  display: flex;
+  height: 600px;
+  gap: 45px;
+}
+
+.offer-title-wrapper {
+  display: block;
+  max-width: max-content;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+h1 {
+  color: #fff;
+  font-family: Source Code Pro;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.offer-text-wrapper {
+  width: 320px;
+}
+
+.offer-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.contact-us {
+  padding: 17px 34px;
+  border-radius: 12px;
+  background: #222;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+  display: block;
+  max-width: max-content;
+  margin-top: 22px;
+}
+
+.contact-us:hover {
+  background: #2c2c2c;
+}
+
+/*----------------------------------------------------------------------------- MISSION STYLES */
+
+.mission {
+  padding-bottom: 125px;
+}
+
+.numerick-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.numerick-wrapper div {
+  border-top: 4px solid #606060;
+}
+
+.numeric-title {
+  color: #6955ea;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 110%;
+  display: block;
+  max-width: max-content;
+  margin-top: 40px;
+}
+.numeric-text {
+  color: #222;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 5px;
+}
+
+/*----------------------------------------------------------------------------- PILLARS STYLES */
+
+.pillars-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pillars-item {
+  background-color: #fff;
+  border-radius: 26px;
+  width: 360px;
+  height: 382px;
+}
+
+.pillars-item img {
+  display: block;
+  max-width: max-content;
+  margin-left: auto;
+  margin-bottom: 77px;
+}
+
+.pillars-item h3 {
+  color: #6955ea;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.pillars-item p {
+  color: #282828;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 10px;
+}
+
+.pillars-item div {
+  display: block;
+  padding: 0 22px;
+}
+
+/*----------------------------------------------------------------------------- PORTFOLIO STYLES */
+
+.portfolio {
+  padding: 125px 0;
+}
+
+.slider-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.owl-item {
+  display: block;
+  max-width: max-content;
+  border-radius: 52px;
+  padding: 26px 32px;
+  background: #fff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel img {
+  height: 32px !important;
+  width: 32px !important;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.container-black {
+  border-radius: 26px;
+  background: #222;
+  padding: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 64px;
+}
+
+.crypto-payment {
+  padding: 20px 40px;
+  background: #fff;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.person-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.container-black h3 {
+  color: #fff;
+  font-family: Source Code Pro;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.person-name-wrapper {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.person-name-wrapper img {
+  width: 109px;
+  height: 22px;
+}
+
+.portfolio .container-black span {
+  color: #fff;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-top: 8px;
+}
+
+.portfolio .container-black p {
+  width: 340px;
+  opacity: 0.8;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.portfolio-item {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.portfolio-item span {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.owl-item {
+  width: auto !important;
+}
+
+/*----------------------------------------------------------------------------- STRATEGIES STYLES */
+
+.title-wrapper {
+  display: flex;
+  margin-bottom: 64px;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+}
+
+.title-wrapper h2 {
+  color: #282828;
+  font-size: 25px;
+  line-height: 120%;
+  margin-bottom: 0;
+}
+
+.title-wrapper span {
+  padding: 10px 28px;
+  color: #282828;
+  font-family: Source Code Pro;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.assets,
+.annual-returns,
+.monthly-returns,
+.spread,
+.volatility,
+.in-developing {
+  border: 2px solid #00ff57;
+  border-radius: 26px;
+}
+
+.annual-returns {
+  border: 2px solid #00c2ff;
+}
+.monthly-returns {
+  border: 2px solid #f3ea06;
+}
+.spread {
+  border: 2px solid #ff005c;
+}
+.volatility {
+  border: 2px solid #f90;
+}
+
+.in-developing {
+  border: 2px solid #606060;
+}
+
+.strategies .strategies-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  row-gap: 19px;
+  flex-wrap: wrap;
+}
+
+.strategies .strategy {
+  background-color: #fff;
+  padding: 14px 16px;
+  border-radius: 26px;
+  width: 360px;
+}
+
+.strategy-text-opener {
+  transition: all 0.3s ease;
+}
+
+.strategy-text-opener.strategy-text-opener-active {
+  transform: rotate(-180deg);
+}
+
+.strategies .strategy-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.strategies .strategy h3 {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.strategy-text {
+  margin: 16px 0;
+  overflow: hidden;
+  color: #606060;
+  text-overflow: ellipsis;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 328px;
+  height: 26px;
+  transition: height 0.3s ease;
+}
+
+.strategy-text-opened {
+  height: 85px;
+  transition: height 0.3s ease;
+}
+
+.strategies .strategy span {
+  padding: 7px 14px;
+  border-radius: 13px !important;
+  color: #222;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.view-all-btn {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 36px;
+  max-width: max-content;
+  color: #606060;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.view-all-btn:hover {
+  color: #222;
+}
+
+/*----------------------------------------------------------------------------- PARTNERS STYLES */
+
+.partners {
+  padding: 125px 0;
+}
+
+.partners-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners img {
+  width: 143px;
+  height: 143px;
+}
+
+/*----------------------------------------------------------------------------- QUESTION STYLES */
+
+.question {
+  padding-bottom: 125px;
+}
+
+.question .container-black {
+  padding: 42px 32px;
+  gap: 63px;
+  margin-top: 0;
+}
+
+.question .text-wrapper {
+  width: 667px;
+}
+
+.question h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: 32px;
+}
+
+.question p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.question form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+form input,
+form textarea {
+  width: 328px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  outline: none;
+  resize: vertical;
+}
+
+.iti__selected-flag {
+  border-right: 2px solid #94a3b8;
+}
+
+.question form textarea {
+  height: 100px;
+  min-height: 100px;
+  max-height: 180px;
+}
+
+.question form input[type='submit'] {
+  padding: 17px 34px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+/*----------------------------------------------------------------------------- FOOTER STYLES */
+
+footer {
+  padding: 31px 0;
+  background-color: #fff;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  gap: 542px;
+}
+
+footer span {
+  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.rights-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.rights-wrapper a {
+  color: #606060;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+/*----------------------------------------------------------------------------- ABOUT US STYLES */
+
+.about-us .container {
+  display: flex;
+  gap: 33px;
+  flex-direction: row-reverse;
+  padding-bottom: 50px;
+}
+
+.about-us .left-col {
+  background-color: #6955ea;
+  padding: 65px 35px 65px 30px;
+  width: 262px;
+  border-radius: 0px 0px 0px 25px;
+}
+
+.about-us h2 {
+  color: #fff;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 42px;
+}
+
+.about-us .section-menu,
+.tab-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tab-link {
+  display: block;
+  max-width: max-content;
+  text-align: left;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.about-us .right-col {
+  padding-top: 69px;
+  padding-bottom: 69px;
+  width: 876px;
+}
+
+.core-values-text,
+.our-mission-text,
+.digital-currency-text {
+  display: none;
+}
+
+.core-values-text.active,
+.our-mission-text.active,
+.digital-currency-text.active {
+  display: block;
+}
+
+.about-us h3 {
+  color: #6955ea;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #606060;
+}
+
+.about-us p {
+  color: #1e1e1e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.about-us p:first-of-type {
+  margin-top: 24px;
+}
+
+.about-us p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.tab-content {
+  display: none;
+  height: 571px;
+}
+
+.tab-content:target {
+  display: block;
+}
+
+.tab-link:hover {
+  text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+/*----------------------------------------------------------------------------- TRUST MANAGEMENT STYLES */
+
+.trust-management .trust-management-inner-wrapper {
+  display: flex;
+  gap: 60px;
+  padding-bottom: 68px;
+}
+
+.trust-management .trust-management-inner-wrapper:first-child {
+  padding-top: 68px;
+}
+
+.trust-management .left-col {
+  width: 780px;
+}
+
+.trust-management .right-col {
+  width: 360px;
+}
+
+.trust-management h1 {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: 24px;
+}
+
+.trust-management h1 b {
+  color: #6955ea;
+  font-family: Source Code Pro;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.trust-management p {
+  color: #1e1e1e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.trust-management .right-col img {
+  width: 360px;
+  height: 269px;
+}
+
+.trust-management .left-col img {
+  width: 100%;
+  height: 258px;
+}
+
+/*----------------------------------------------------------------------------- SIGN UP STYLES */
+
+.sign-up {
+  padding: 125px 0 210px;
+}
+
+.sign-up .container {
+  background-color: #222;
+  border-radius: 26px;
+  padding: 60px 100px;
+}
+
+.sign-up h1 {
+  color: #fff;
+  font-family: Source Code Pro;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: 24px;
+}
+
+.sign-up h2 {
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.sign-up span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  width: 510px;
+  margin-bottom: 28px;
+  gap: 8px;
+}
+
+.iti__country-name,
+.iti__dial-code {
+  color: #222 !important;
+}
+
+.sign-up-form input {
+  display: block;
+  width: 100%;
+}
+
+.sign-up-form label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.sign-up-form input[type='submit'] {
+  padding: 17px 34px;
+  display: block;
+  color: #fff;
+  border-radius: 12px;
+  background: #606060;
+  margin-top: 20px;
+}
+
+.sign-up-form input[type='submit']:hover,
+.sign-in form input[type='submit']:hover {
+  background: #525252;
+}
+
+.sign-up a {
+  margin-top: 28px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/*----------------------------------------------------------------------------- SIGN IN STYLES */
+
+.sign-in {
+  padding: 125px 0 185px;
+}
+
+.sign-in .container {
+  border-radius: 26px;
+  background: #222;
+  padding: 60px 100px;
+}
+
+.sign-in h1 {
+  color: #fff;
+  font-family: Source Code Pro;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: 24px;
+}
+
+.sign-in h2 {
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.sign-in span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.sign-in form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+  width: 510px;
+  margin-bottom: 28px;
+}
+
+.sign-in form input {
+  display: block;
+  width: 100%;
+}
+
+.sign-in-form label {
+  color: #fff;
+  font-size: 14px;
+}
+
+.sign-in form input[type='submit'] {
+  padding: 17px 34px;
+  display: block;
+  color: #fff;
+  border-radius: 12px;
+  background: #606060;
+  margin-top: 20px;
+}
+
+.sign-in a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/*----------------------------------------------------------------------------- LK USER STYLES */
+
+.lk-user-main {
+  padding: 40px 0;
+}
+
+.lk-user-main .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.lk-user-main .left-col {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lk-user-main .right-col {
+  width: 780px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.user-info {
+  padding: 18px 50px;
+  background: #fff;
+  border-radius: 26px;
+}
+
+.user-info-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-info-avatar {
+  width: 69px;
+  height: 69px;
+}
+
+.user-info-status {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+
+.user-info-name span,
+.verification-wrapper span,
+.strategy-wrapper span {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.verification-wrapper,
+.strategy-wrapper,
+.user-info-name {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.verification-wrapper span {
+  color: #6955ea;
+}
+
+.strategy-wrapper span {
+  color: #606060;
+}
+
+.user-info-cog {
+  width: 20px;
+  height: 21px;
+}
+
+.user-info-balance h3 {
+  color: #606060;
+  font-family: Source Code Pro;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.user-info-balance {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.balance-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.balance {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.balance img {
+  width: 32px;
+  height: 32px;
+}
+
+.balance span {
+  color: #222;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.balance span b {
+  color: #222;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-left: 10px;
+}
+
+.left-menu-list {
+  border-radius: 26px;
+  background: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.left-menu-list li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.left-menu-list a {
+  color: #606060;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.left-menu-list a:hover {
+  color: #222;
+}
+
+.widgets {
+  border-radius: 26px;
+  background: #efefef;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.widgets__insurance {
+  border-radius: 26px;
+  background: #efefef;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.widgets span {
+  color: #000;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 400;
+  opacity: 0.1;
+}
+
+/*----------------------------------------------------------------------------- LK USER EARNINGS AND GRAPH STYLES */
+
+.earnings,
+.diver-graph {
+  padding: 24px 10px;
+  border-radius: 26px;
+  background: #fff;
+}
+
+.diver-graph {
+  width: 396px;
+  height: 218px;
+}
+
+.diver-graph-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*----------------------------------------------------------------------------- LK USER CALENDAR STYLES */
+
+.calendar-wrapper {
+  width: 100%;
+  padding: 26px;
+  border-radius: 26px;
+  background: #fff;
+  position: relative;
+}
+
+table {
+  clear: both;
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+
+.calendar-wrapper td {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border: none;
+  color: #222;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -khtml-border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days,
+.calendar-wrapper tr {
+  display: flex;
+  justify-content: center;
+}
+
+.calendar-wrapper thead td {
+  color: #222;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+td.not-current {
+  color: #94a3b8;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+td.today {
+  color: #4f46e5;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  border: 1px solid #818cf8;
+  background: #eef2ff;
+}
+
+.days td {
+  color: #6955ea;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+#btnPrev {
+  float: left;
+  left: 40px;
+}
+
+#btnNext {
+  float: right;
+  margin-bottom: 20px;
+  right: 40px;
+}
+
+#btnPrev,
+#btnNext {
+  position: absolute;
+  top: 35px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*----------------------------------------------------------------------------- LK USER DIVERSIFICATION STYLES */
+
+.diversification {
+  border-radius: 26px;
+  background: #fff;
+  padding: 24px;
+  width: 365px;
+}
+
+.diversification h2 {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 24px;
+}
+
+.diversification-outer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.diversification-inner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.diversification-inner-wrapper::before {
+  content: '';
+  height: 6px;
+  position: absolute;
+  width: 1%;
+  background: #00c2ff;
+  bottom: 0;
+  z-index: 2;
+}
+
+.diversification-inner-wrapper::after {
+  content: '';
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  background: #606060;
+  bottom: 2px;
+  z-index: 1;
+}
+
+.etf-wrapper::before {
+  background: #f3ea06;
+}
+
+.crypto-10-wrapper::before {
+  background: #ff005c;
+}
+
+.buy-n-buy-wrapper::before {
+  background: #00ff57;
+}
+
+.crypto-arbit-wrapper::before {
+  background: #ff9900;
+}
+
+.diversification-inner-wrapper div {
+  display: flex;
+  gap: 7px;
+  border: none;
+  padding: 0;
+}
+
+.diversification .strategy-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 5px;
+}
+
+.strategy-percents,
+.strategy-sum,
+.strategy-currency {
+  color: #606060;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.strategy-percents {
+  color: #6955ea;
+}
+
+/*----------------------------------------------------------------------------- LK USER ACTIVITY STYLES */
+
+.activity {
+  padding: 24px 32px;
+  background: #fff;
+  border-radius: 26px;
+}
+
+.activity h2 {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+
+.activity-table tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.activity .rows-names {
+  color: #606060;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.one-action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transactions,
+.transactions-cell {
+  display: block;
+  width: 93px;
+}
+
+.transactions-cell {
+  height: 32px;
+  color: #222;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.id-number,
+.id-number-cell {
+  display: block;
+  width: 88px;
+}
+
+.id-number-cell {
+  height: 32px;
+  overflow: hidden;
+  color: #606060;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.status,
+.status-cell {
+  display: block;
+  width: 50px;
+  height: 32px;
+}
+
+.status-cell {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  border-radius: 12px;
+  border: 1px solid #00c2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one-action-close .status-cell {
+  border: 1px solid #ff005c;
+}
+.one-action-deposit .status-cell {
+  border: 1px solid #00ff57;
+}
+.one-action-withdraw .status-cell {
+  border: 1px solid #f90;
+}
+
+.date,
+.date-cell {
+  display: block;
+  width: 59px;
+}
+
+.date-cell {
+  height: 32px;
+  overflow: hidden;
+  color: #222;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.amound,
+.amound-cell {
+  display: block;
+  width: 57px;
+  height: 32px;
+}
+
+.amound-cell {
+  overflow: hidden;
+  color: #00c2ff;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  position: relative;
+}
+
+.one-action-close .amound-cell {
+  color: #ff005c;
+}
+
+.amound-cell-buy::after,
+.amound-cell-withdraw::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.amound-cell-buy::after {
+  background: url(/assets/img/activity-buy-refresh.svg);
+}
+.amound-cell-withdraw::after {
+  background: url(/assets/img/activity-withdraw-check.svg);
+}
+
+/*----------------------------------------------------------------------------- LK USER CRYPTO WALLET STYLES */
+
+.crypto-wallet {
+  border-radius: 26px;
+  background: #fff;
+  padding: 28px 45px;
+}
+
+.crypto-wallet h2 {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 0;
+}
+
+.wallet-name-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wallet-name-inner-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wallet-name {
+  color: #606060;
+  font-family: Source Code Pro;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.wallet-id {
+  color: #606060;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.wallet-table {
+  margin-top: 32px;
+}
+
+.overall-balance,
+.overall-balance-cell,
+.used-in-strategies,
+.used-in-strategies-cell,
+.available,
+.available-cell {
+  width: 187px;
+}
+
+.wallet-table .rows-names {
+  color: #606060;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-family: Source Code Pro;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.wallet-table .one-currency {
+  color: #222;
+  text-align-last: left;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.one-currency td {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.wallet-action-title {
+  color: #606060;
+  font-family: Source Code Pro;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.actions-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.actions-wrapper a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #606060;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/*----------------------------------------------------------------------------- LK USER DEPOSIT STYLES */
+
+.deposit {
+  width: 594px;
+}
+
+.deposit h2 {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 0;
+}
+
+.deposit-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.payment-methods-wrapper {
+  display: flex;
+  align-items: start;
+  gap: 64px;
+}
+
+.payment-method {
+  padding: 20px 40px;
+  background: #fff;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.payment-method-cards {
+  width: 288px;
+}
+
+.payment-method-title {
+  color: #606060;
+  font-family: Source Code Pro;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.payment-method div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payment-method a {
+  display: block;
+  max-width: max-content;
+  padding: 17px 34px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+  border-radius: 12px;
+  background: #414141;
+}
+
+/*----------------------------------------------------------------------------- LK USER CRYPTO STYLES */
+
+.crypto {
+  background: #fff;
+  padding: 28px 48px;
+  border-radius: 26px;
+}
+
+.crypto h2 {
+  color: #222;
+  font-family: Source Code Pro;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 32px;
+}
+
+.crypto-name {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #222;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.crypto-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exchange,
+.comission {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.exchange-gray,
+.comission-gray {
+  color: #222;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.crypto-adress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin: 33px 0;
+}
+
+.crypto-adress span {
+  color: #606060;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.crypto-id {
+  padding: 10px;
+  border-radius: 26px;
+  background: #f6f7ff;
+}
+
+.crypto-adress button {
+  color: #606060;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.crypto-adress button img {
+  width: 31px;
+  height: 31px;
+}
+
+.qr-code {
+  display: block;
+  width: 131px;
+  height: 131px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.crypto-links-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.crypto-links-wrapper a {
+  color: #606060;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.crypto-links-wrapper a img {
+  width: 31px;
+  height: 31px;
+}
+
+/*----------------------------------------------------------------------------- LK USER CARD STYLES */
+
+.card {
+  padding: 28px 48px;
+  border-radius: 26px;
+  background: #fff;
+  display: block;
+  max-width: max-content;
+}
+
+.card h2 {
+  margin-bottom: 32px;
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.card .card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-form label {
+  gap: 4px;
+  color: #606060;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.card .card-form input {
+  border-radius: 8px;
+  border: 1px solid #606060;
+  background: #f6f7ff;
+  width: 235px;
+  color: #606060;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.card .card-form input:active {
+  color: #222;
+}
+
+.card .card-form input:focus {
+  color: #222;
+}
+
+.card-form .df {
+  gap: 32px;
+}
+.expiry-date,
+.cvv-cvc {
+  width: 83px !important;
+}
+
+.card .card-form .accept {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+  padding: 17px 34px;
+  border-radius: 12px;
+  background: #6955ea;
+  display: block;
+  max-width: max-content;
+  border: none;
+}
+
+.card .card-form .accept:active,
+.card .card-form .accept:focus {
+  color: #fff;
+}
+
+/*----------------------------------------------------------------------------- LK USER WITHDRAW STYLES */
+
+.withdraw-card-wrapper {
+  padding: 28px 48px;
+  border-radius: 26px;
+  background: #fff;
+  max-width: max-content;
+}
+
+.withdraw-card-wrapper h2 {
+  margin-bottom: 32px;
+  font-family: Source Code Pro;
+  font-size: 25px;
+}
+
+.withdraw-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.withdraw-card-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #606060;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.withdraw-card-form input {
+  border-radius: 8px;
+  border: 1px solid #606060;
+  background: #f6f7ff;
+  padding: 8px 8px 8px 10px;
+  width: 235px;
+}
+
+.withdraw-card-form input:focus {
+  border: 1px solid #94a3b8;
+  background: #fff;
+}
+
+.withdraw-card-form input[type='submit'] {
+  margin-top: 32px;
+  border-radius: 12px;
+  background: #6955ea;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+  max-width: max-content;
+  padding: 17px 34px;
+  border: none;
+}
+
+.currency {
+  padding: 28px 48px;
+  background: #fff;
+  border-radius: 26px;
+}
+
+.currency h2 {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  margin-bottom: 32px;
+}
+
+/* Стиль Выпадающей Кнопки */
+.dropbtn {
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #6366f1;
+  color: #0f172a;
+  padding: 10px 12px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.dropbtn:focus {
+  border: 1px solid #6366f1;
+}
+
+.dropbtn:active {
+  border: 1px solid #6366f1;
+}
+
+/* контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Выпадающей контент (по умолчанию скрыт) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 12px;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 12px;
+}
+
+/* Изменить цвет выпадающих ссылок при наведении */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Показать выпадающее меню при наведении */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Изменить цвет фона выпадающего кнопка при отображении выпадающего списка */
+.dropdown:hover .dropbtn {
+  border: 1px solid #5340cc;
+}
+
+.deposit-title-wrapper h2 {
+  margin-bottom: 0;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.withdraw-bitcoin-wrapper {
+  padding: 28px 48px;
+  border-radius: 26px;
+  background: #fff;
+}
+
+.withdraw-bitcoin-wrapper h2 {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.withdraw-bitcoin-info {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.withdraw-bitcoin-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.withdraw-bitcoin-balance,
+.withdraw-bitcoin-comission {
+  color: #222;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.withdraw-bitcoin-balance b,
+.withdraw-bitcoin-comission b {
+  color: #222;
+  font-family: Source Code Pro;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.withdraw-bitcoin-where-from-form,
+.withdraw-bitcoin-amount-form {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.withdraw-bitcoin-where-from-form label,
+.withdraw-bitcoin-amount-form label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.withdraw-bitcoin-where-from-form label span,
+.withdraw-bitcoin-amount-form label span {
+  color: #606060;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-right: 20px;
+  width: 63px;
+}
+
+.withdraw-bitcoin-where-from-form input,
+.withdraw-bitcoin-amount-form input {
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--unnamed, #94a3b8);
+  background: #fff;
+  width: 231px;
+}
+
+.withdraw-bitcoin-where-from-form input[type='submit'],
+.withdraw-bitcoin-amount-form input[type='submit'] {
+  padding: 17px 34px;
+  margin-left: 0;
+  border-radius: 12px;
+  background: #6955ea;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+  max-width: max-content;
+}
+
+.withdraw-bitcoin-details-amount b {
+  color: #222;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.withdraw-bitcoin-details-amount {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+/*----------------------------------------------------------------------------- LK USER WITHDRAW ACCEPTED STYLES */
+.withdraw-request-accepted h1 {
+  color: #222;
+  font-size: 40px;
+  text-align: center;
+}
+
+.withdraw-request-accepted h2 {
+  color: #606060;
+  font-size: 25px;
+  margin-bottom: 0;
+  text-align: center;
+  margin: 20px 0 16px 0;
+}
+
+.withdraw-request-accepted p {
+  color: #94a3b8;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.withdraw-request-accepted .go-to-dash {
+  margin: 0 auto;
+}
+
+/*----------------------------------------------------------------------------- LK USER PROFILE SETTINGS STYLES */
+
+.profile-settings {
+  padding: 17px;
+  border-radius: 26px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-name,
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.profile-name-inner-wrapper div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.profile-name-outer-wrapper {
+  width: 100%;
+}
+
+.profile-name-inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile-name-inner-wrapper .profile-settings-link {
+  color: #606060;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.profile-info-warpper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-info-inner-wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.profile-info-inner-wrapper span {
+  color: #606060;
+  font-family: Source Code Pro;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/*----------------------------------------------------------------------------- LK USER CRYPTO WALLET SHORT STYLES */
+
+.crypto-wallet-short {
+  border-radius: 26px;
+  background: #fff;
+  padding: 28px 48px;
+}
+
+.crypto-wallet-short h2 {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 0;
+}
+
+.crypto-wallet-short .wallet-name-wrapper {
+  margin-bottom: 32px;
+}
+
+.crypto-wallet-short .curensly-balance {
+  color: #606060;
+  font-family: Source Code Pro;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.crypto-wallet-short .balance-wrapper {
+  flex-direction: row;
+  gap: 32px;
+}
+
+.crypto-wallet-short .balance-wrapper div {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.crypto-wallet-short .balance-wrapper div span {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+/*----------------------------------------------------------------------------- LK USER PASSPORT CONTRACT STYLES */
+
+.document-wrapper {
+  border-radius: 26px;
+  background: #fff;
+  width: 380px;
+  padding: 18px;
+}
+
+.document-outer-wrapper {
+  justify-content: space-between;
+}
+
+.document-wrapper img {
+  margin-bottom: 32px;
+}
+
+.document-wrapper h3 {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 8px;
+}
+
+.document-wrapper span {
+  color: #606060;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.document-wrapper a {
+  color: #00c2ff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/*----------------------------------------------------------------------------- LK USER SETTINGS STYLES */
+
+.settings-container {
+  width: 562px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.settings-title {
+  margin-bottom: 37px;
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.personal-info-wrapper {
+  border-radius: 26px;
+  background: #fff;
+  padding: 30px;
+  width: 562px;
+}
+
+.personal-info-wrapper h2 {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+.personal-info {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 32px;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.personal-info label {
+  gap: 4px;
+  color: #606060;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.personal-info input[type='text'],
+.personal-info input[type='email'],
+.personal-info input[type='tel'] {
+  width: 235px;
+  border-radius: 8px;
+  border: 1px solid #606060;
+  background: #f6f7ff;
+  color: #606060;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.personal-info input[type='text']:focus,
+.personal-info input[type='email']:focus,
+.personal-info input[type='tel']:focus {
+  border: 1px solid var(--brand-200, #c7d2fe);
+}
+
+.personal-info input[type='submit'] {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+  padding: 17px 34px;
+  border-radius: 12px;
+  background: #414141;
+  display: block;
+  max-width: max-content;
+  margin-top: 16px;
+}
+
+.password {
+  padding: 30px;
+  border-radius: 26px;
+  background: #fff;
+}
+
+.password h2 {
+  color: #222;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+.password-change label {
+  color: #606060;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.password-change input[type='password'] {
+  border-radius: 8px;
+  border: 1px solid #606060;
+  background: #f6f7ff;
+}
+
+.password-change input[type='submit'] {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+  padding: 17px 34px;
+  border-radius: 12px;
+  background: #414141;
+  display: block;
+  max-width: max-content;
+  margin-top: 32px;
+}
+
+.passport-verification {
+  padding: 30px;
+  border-radius: 26px;
+  background-color: #fff;
+}
+
+.passport-verification h2 {
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+.passport-verification span {
+  font-family: Source Code Pro;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 8px;
+}
+
+.passport-verification form {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 32px;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.passport-verification form label {
+  gap: 4px;
+  color: #606060;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.passport-verification form input {
+  width: 235px;
+  border-radius: 8px;
+  border: 1px solid #606060;
+  background: #f6f7ff;
+  color: #606060;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.not-verified span {
+  color: #ff005c;
+}
+
+.for-view span {
+  color: #f3ea06;
+}
+
+.for-view h2 {
+  color: #fff;
+}
+
+.passport-verification.for-view {
+  background: #606060;
+}
+
+.passport-verification.verified {
+  background: #222;
+}
+
+.verified span {
+  color: #00ff57;
+}
+
+.verified h2 {
+  color: #fff;
+}
+
+/* verification */
+.input__wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-content: start;
+}
+
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.input__file-button-text {
+  color: #fff !important;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+  margin-right: 10px;
+}
+
+.input__file-button {
+  flex-direction: row-reverse !important;
+  border-radius: 12px;
+  background: #6955ea;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  cursor: pointer;
+  max-width: max-content;
+  padding: 17px 34px;
+}
+
+.input__file-icon-wrapper,
+.input__file-button-text {
+  margin-bottom: 0 !important;
+}
+
+/*----------------------------------------------------------------------------- LK USER STRATEGYS STYLES */
+
+.strategy {
+  padding: 18px 22px;
+  border-radius: 26px;
+  background: #fff;
+}
+
+.strategy.active-strategy {
+  background: #222;
+}
+
+.strategy-status-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.strategy-status {
+  color: #00ff57;
+  font-family: Source Code Pro;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.strategy-time-wrapper {
+  display: flex;
+  gap: 48px;
+}
+.strategy-time-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.strategy-time-inner-wrapper span {
+  color: #fff;
+  font-family: Source Code Pro;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.strategy-time-inner-wrapper span:last-of-type {
+  opacity: 0.35;
+}
+
+.strategy h2 {
+  color: #fff;
+  font-family: Source Code Pro;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.strategy-info-wrapper {
+  display: flex;
+  gap: 42px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.strategy-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.strategy-info-title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.strategy-info-value {
+  color: #fff;
+  font-family: Source Code Pro;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.strategy-info.info-monthly-income .strategy-info-value {
+  color: #00ff57;
+}
+
+.strategy-info.info-monthly-income .strategy-info-value-gray {
+  color: #fff;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.finish-early,
+.use-now {
+  border-radius: 12px;
+  background: #414141;
+  padding: 17px 34px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+  margin-left: 51px;
+}
+
+/* Not active strategy */
+
+.strategy.not-active-strategy {
+  background: #fff;
+}
+
+.not-active-strategy .strategy-status {
+  color: #ff005c;
+}
+
+.not-active-strategy h2 {
+  color: #222;
+  margin-bottom: 36px;
+}
+
+.not-active-strategy .strategy-info-title {
+  color: #222;
+}
+
+.not-active-strategy .strategy-info-value {
+  color: #222;
+}
+
+.info-income-per-year .strategy-info-value {
+  color: #00ff57;
+  font-family: Source Code Pro;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 110%;
+  width: 144px;
+}
+
+.use-now {
+  background: #6955ea;
+}
+
+.noUi-target {
+  width: 280px;
+  height: 4px;
+  background: #94a3b8;
+  border: none;
+  box-shadow: none;
+}
+
+.noUi-handle {
+  width: 12px !important;
+  height: 12px !important;
+  border: none;
+  background: none;
+  box-shadow: none;
+  background-color: #d9d9d9;
+  border-radius: 100%;
+  right: -6px !important;
+  top: -4px !important;
+}
+
+.noUi-touch-area {
+  width: 120%;
+  height: 120%;
+}
+
+.noUi-connect {
+  background: #6955ea;
+}
+
+.noUi-pips-horizontal {
+  height: 10px;
+  padding: 0;
+}
+
+.noUi-pips {
+  color: #000;
+  top: -4px;
+  font-family: Source Code Pro;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.noUi-value {
+  top: -35px;
+}
+
+.noUi-value::after {
+  content: 'M';
+  margin-left: 5px;
+}
+
+#slider .noUi-value::after {
+  content: 'Y';
+}
+
+.noUi-marker-horizontal.noUi-marker-large {
+  height: 6px;
+  width: 2px;
+}
+
+.noUi-marker-large {
+  background: #606060;
+}
+
+.noUi-handle:after,
+.noUi-handle:before,
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+
+.noUi-pips-horizontal {
+  width: 99.82%;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.slider-input {
+  width: 235px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #606060;
+  background: #fff;
+}
+
+.slider-input:focus {
+  border: 1px solid #c7d2fe;
+}
+
+/*----------------------------------------------------------------------------- LK USER INDEPENDENT-TRADING STYLES */
+
+.independent-trading h1,
+.independent-trading h2 {
+  font-family: Source Code Pro;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.independent-trading h1 {
+  color: #222;
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+
+.independent-trading h2 {
+  color: #606060;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.independent-trading p {
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 24px 0;
+}
+
+.go-to-dash {
+  padding: 17px 34px;
+  border-radius: 12px;
+  background: #6955ea;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+  display: block;
+  max-width: max-content;
+}
+
+/*----------------------------------------------------------------------------- LK USER SECURITY STYLES */
+
+.security h1 {
+  color: #222;
+  margin-bottom: 32px;
+}
+
+.two-factor-info,
+.google-auth,
+.sms-auth {
+  padding: 18px;
+  border-radius: 26px;
+  background: #fff;
+  width: 100%;
+}
+
+.two-factor-info {
+  margin-bottom: 20px;
+}
+
+.two-factor-info h2,
+.google-auth h2,
+.sms-auth h2 {
+  color: #6955ea;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.two-factor-info h2 {
+  margin-bottom: 12px;
+}
+
+.two-factor-info p,
+.google-auth p,
+.sms-auth p {
+  color: #222;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.google-auth,
+.sms-auth {
+  width: 368px;
+}
+
+.google-auth p,
+.sms-auth p {
+  font-size: 14px;
+}
+
+.security .df {
+  justify-content: space-between;
+}
+
+.google-auth,
+.sms-auth {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: space-between;
+  height: 262px;
+}
+
+.switch-btn {
+  display: inline-block;
+  width: 72px;
+  height: 32px;
+  border-radius: 26px;
+  background: #94a3b8;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 300ms;
+}
+
+.switch-btn::after {
+  content: '';
+  height: 22px;
+  width: 38px;
+  border-radius: 26px;
+  background: #606060;
+  top: 4px;
+  left: 3px;
+  transition-duration: 300ms;
+  position: absolute;
+  z-index: 1;
+}
+
+.switch-on {
+  background: #fff;
+}
+
+.switch-on.switch-btn::after {
+  background: #00ff57;
+}
+.switch-on::after {
+  left: 30px;
+}
+
+/*----------------------------------------------------------------------------- AK STYLES */
+
+.ak-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.ak-section h1 {
+  color: #000;
+  font-family: Source Code Pro;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: 30px;
+}
+
+.inf-outer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-inf-wrapper,
+.right-inf-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ak-user {
+  margin-top: 34px;
+}
+
+.ak-user-header {
+  padding: 20px 28px;
+  color: #fff;
+  border-radius: 26px 26px 0px 0px;
+  background: #6955ea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ak-user-name-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.ak-user-btn {
+  width: 32px;
+  height: 32px;
+  transition: all 0.3s ease;
+}
+
+.ak-user-btn.ak-user-btn-active {
+  transform: rotate(180deg);
+}
+
+.ak-wallet-number-save-btn {
+  padding: 17px 34px;
+  border-radius: 12px;
+  background: #414141;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.ak-wallet-number-wrapper {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.ak-user-inner {
+  height: 0px;
+  overflow: hidden;
+}
+
+.ak-user-inner.ak-user-inner-active {
+  height: auto;
+}
+
+.chat_modal.chat_modal-active {
+  position: absolute;
+
+  display: flex;
+}
+
+.ak-user-row {
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  gap: 115px;
+}
+
+.ak-user-name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.ak-wallet-number-input {
+  padding: 10px 20px;
+  border-radius: 26px;
+  background: #fff;
+  color: #000;
+  width: auto !important;
+  max-width: 220px;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+}
+
+.ak-user-row span,
+.ak-user-passport-download {
+  width: 200px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.ak-user-row:nth-child(2n) {
+  background: #fff;
+}
+
+.ak-user-sum-vacant-title,
+.ak-user-sum-used-title {
+  color: #94a3b8 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 140% !important;
+}
+
+.ak-user-row-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+}
+
+.ak-user-sum-vacant-wrapper,
+.ak-user-sum-used-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.ak-user-row-btn {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-left: auto;
+}
+
+.ak-user-row-btn svg path {
+  stroke: #606060;
+}
+
+.ak-user-row-btn svg path:hover {
+  stroke: #5340cc;
+}
+
+.ak-user-passport-download {
+  color: #6955ea;
+  font-size: 18px;
+}
+
+.ak-user-strategy-beginning-date,
+.ak-user-strategy-ending-date {
+  font-size: 14px !important;
+  width: 69px !important;
+}
+
+.ak-user-row-strategy .ak-user-row-title {
+  width: 107px;
+}
+
+.ak-user-strategy-name {
+  width: 127px !important;
+}
+
+.ak-user-strategy-income {
+  width: 178px !important;
+}
+
+.ak-user-row.ak-user-row-strategy {
+  gap: 54px;
+}
+
+.ak-user-row-strategy-wrapper-1 {
+  display: flex;
+  gap: 69px;
+  align-items: center;
+}
+
+.ak-user-row-strategy-wrapper-2 {
+  display: flex;
+  align-items: center;
+  gap: 66px;
+}
+
+.ak-user-row-strategy-wrapper-3 {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/*----------------------------------------------------------------------------- STATEGIES FROM MAIN STYLES */
+
+.strategys-f-main {
+  padding: 65px 0;
+}
+
+.strategys-f-main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-strategy-wrapper {
+  padding: 20px 14px;
+  background: #fff;
+  border-radius: 26px;
+  width: 729px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.main-strategy-wrapper h2 {
+  margin-bottom: 35px;
+  font-family: Source Code Pro;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.main-strategy-text-wrapper {
+  width: 328px;
+}
+
+.main-strategy-wrapper p {
+  color: #606060;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.main-strategy-text-inner-wrapper {
+  margin-top: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+.main-strategy-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-strategy-item-title {
+  color: #222;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.main-strategy-item-text {
+  color: #222;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.strategy-range {
+  width: 300px;
+  padding: 0;
+}
+
+.strategy-value {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-strategy-item-text-cagr {
+  color: #00c2ff;
+}
+
+.main-strategy-graph {
+  width: 360px;
+}
+
+.main-strategy-graph-img {
+  margin-top: 20px;
+  width: 360px;
+  height: 145px;
+}
+.errorBalance {
+  color: red;
+  font-size: 16px;
+}
+
+.confirm-tel {
+  display: none;
+}
+.confirm-tel-active {
+  background-color: #00000054;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
+  width: 100vw;
+}
+.confirm-tel-info {
+  max-width: 500px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px;
+}
+.confirm-tel-text {
+  color: black !important;
+  margin-bottom: 40px !important;
+}
+#confirmTel {
+  border: 1px solid teal;
+  outline: none;
+}
+.confirm-tel-label {
+  margin-bottom: 20px;
+}
+
+.chat {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  background-color: #6955ea;
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  border-radius: 50%;
+  left: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat_img {
+  display: flex;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+}
+
+.chat-img-adm {
+  display: flex;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.chat_modal {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  /* align-items:center; */
+  justify-content: center;
+  z-index: 100;
+}
+
+.button_chat {
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #6955ea;
+  color: #6955ea;
+}
+
+.form_chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat_container {
+  padding: 20px 100px;
+  width: 800px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.chat_overflow {
+  height: 200px;
+  overflow: scroll;
+  padding: 20px;
+}
+
+.chat_close {
+  display: flex;
+  width: 29px;
+  justify-content: end;
+  margin-left: auto;
+  color: #6955ea;
+  cursor: pointer;
+  padding: 4px 8px;
+  border: 1px solid #6955ea;
+  border-radius: 50%;
+}
+
+background {
+  background-color: black;
+  z-index: 1;
+}
+
+.message {
+  margin-top: 20px;
+  border: 1px solid #6955ea;
+  width: 100%;
+}
+
+.message:focus {
+  border: 1px solid #6955ea;
+}
+
+.chat_relative {
+  position: relative;
+}
+.chat_info {
+  z-index: 100;
+  padding: 5px;
+  position: absolute;
+  top: -27px;
+  right: -24px;
+  background-color: black;
+  border-radius: 100%;
+}
+
+.chat_info:after,
+.chat_info:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  top: 0;
+  background-color: black;
+  border-radius: 100%;
+  -webkit-animation: pulse 2s infinite ease-in-out;
+  animation: pulse 2s infinite ease-in-out;
+}
+.chat_info:before {
+  margin: auto 0 auto -32.5px;
+  height: 65px;
+  width: 65px;
+  opacity: 0.5;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.chat_info:after {
+  margin: auto 0 auto -46px;
+  height: 92px;
+  width: 92px;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  opacity: 0.25;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.chat_img {
+  cursor: pointer;
+}
+.chat-img-adm {
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.img_info {
+  /* position: relative; */
+}
+.img_info:after,
+.img_info:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  top: 0;
+  background-color: black;
+  border-radius: 100%;
+  -webkit-animation: pulse 2s infinite ease-in-out;
+  animation: pulse 2s infinite ease-in-out;
+}
+.img_info:before {
+  margin: auto 0 auto -32.5px;
+  height: 65px;
+  width: 65px;
+  opacity: 0.5;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.img_info:after {
+  margin: auto 0 auto -46px;
+  height: 92px;
+  width: 92px;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  opacity: 0.25;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
