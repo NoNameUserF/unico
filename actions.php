@@ -1,13 +1,22 @@
-<?php require_once 'app/include/header.php'; 
-include "app/controllers/buy-strategy.php";
-session_start();
+<?php 
+require_once 'app/include/header.php';
+require_once "app/controllers/buy-strategy.php";
+
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 if (!isset($_SESSION['id'])) {
     header('Location: index.php');
     exit();
 }
-$reserveAmount = substr($_SESSION['amount'], 0, -3)  ;
 
-
+// Ensure that allAmount is properly cast to a float or integer
+$allAmount = $allAmount;  // Ensure it's a float
+// Ensure balance is treated as a float as well
+$balance = $_SESSION['balance']; 
+// Ensure reserveAmount is treated as an integer
+$reserveAmount = $_SESSION['amount']; 
 
 ?>
 <section class="lk-user-main">
@@ -43,67 +52,19 @@ $reserveAmount = substr($_SESSION['amount'], 0, -3)  ;
             <th class="overall-balance">Overall balance</th>
             <th class="used-in-strategies">Used in strategies</th>
             <th class="available">Available</th>
-
           </tr>
           <tr class="one-currency">
             <td class="overall-balance-cell">
-              <img src="assets/img/tether.svg" alt="" class="balance-icon"><?=$_SESSION['balance']?>
+              <img src="assets/img/tether.svg" alt="" class="balance-icon"><?= $_SESSION['balance'] ?>
             </td>
             <td class="used-in-strategies-cell">
               <img src="assets/img/tether.svg" alt="" class="balance-icon">
-              <?=$allAmount?>
+              <?= $allAmount ?>
             </td>
             <td class="available-cell">
               <img src="assets/img/tether.svg" alt="" class="balance-icon">
-              <?=$_SESSION['balance'] - $allAmount - $reserveAmount?>
-
-            </td>
-
+<span><?= (int)$_SESSION['balance'] - (int)$allAmount - (int)$reserveAmount ?><b></b></span>            </td>
           </tr>
-          <td class="available-cell" style='margin-bottom:30px; display:block;'>
-            <p style=' color: #606060;
-                display: flex;
-                align-items: center;
-                gap: 32px;
-                font-family: Source Code Pro;
-                font-size: 12px;
-                font-weight: 700;
-                line-height: 140%;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                text-align: left;
-              margin-bottom: 20px;'>
-              Res balance</p>
-            <img src="assets/img/tether.svg" class="balance-icon" style='margin-right:20px'>
-            <?php if(isset($_SESSION['amount'])):?>
-            <span style='font-size:26px; font-weight:700'><?=$reserveAmount?></span>
-            <?php endif;?>
-            <?php if($_SESSION['amount'] == 0 ):?>
-            <span style='font-size:26px; font-weight:700'>0
-              <?php endif;?>
-          </td>
-          <!-- <tr class="one-currency">
-            <td class="overall-balance-cell">
-              <img src="assets/img/bitcoin.svg" alt="" />0
-            </td>
-            <td class="used-in-strategies-cell">
-              <img src="assets/img/bitcoin.svg" alt="" />0
-            </td>
-            <td class="available-cell">
-              <img src="assets/img/bitcoin.svg" alt="" />0
-            </td>
-          </tr>
-          <tr class="one-currency">
-            <td class="overall-balance-cell">
-              <img src="assets/img/bitcoin.svg" alt="" />0
-            </td>
-            <td class="used-in-strategies-cell">
-              <img src="assets/img/bitcoin.svg" alt="" />0
-            </td>
-            <td class="available-cell">
-              <img src="assets/img/bitcoin.svg" alt="" />0
-            </td>
-          </tr> -->
         </table>
         <span class="wallet-action-title">Actions</span>
         <div class="actions-wrapper">
@@ -116,3 +77,4 @@ $reserveAmount = substr($_SESSION['amount'], 0, -3)  ;
   </div>
 </section>
 <?php require_once 'app/include/footer.php'; ?>
+

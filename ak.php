@@ -1,11 +1,12 @@
 <?php 
-include "app/controllers/admin.php";
+require_once"app/controllers/admin.php";
 
 
-include "app/include/header.php"; 
+require_once "app/include/header.php"; 
 
-session_start();
-
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();  // Запускаем сессию только если она еще не была начата
+}
 if (!$_SESSION['admin']) {
     header('Location: index.php');
     exit();

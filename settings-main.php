@@ -1,7 +1,9 @@
 <?php require_once 'app/include/header.php'; 
 include "app/controllers/passport.php";
 
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
 <section class="lk-user-main">
   <div class="container">

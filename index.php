@@ -1,7 +1,6 @@
 <?php session_start();
     require_once 'app/include/header.php'; 
 ;?>
-
     <section class="offer">
         <div class="container">
              <div class="offer-title-wrapper animate__animated animate__fadeInLeft">

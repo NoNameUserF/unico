@@ -3,7 +3,13 @@
     
     
     $verification = 0; 
-    include ('../../app/controllers/buy-strategy.php');
+$buyStrategyPath = realpath(__DIR__ . '/../../app/controllers/buy-strategy.php');
+
+if ($buyStrategyPath && file_exists($buyStrategyPath)) {
+    include($buyStrategyPath);
+} else {
+    echo 'Файл buy-strategy.php не найден.';
+}
     $reserveAmount = substr($_SESSION['amount'], 0, -3)  ;
 ?>
 <div class="user-info">
@@ -59,7 +65,8 @@
       <div class="balance">
         <img src="assets/img/tether.svg" alt="" class="balance-icon">
 
-        <span><?= $_SESSION['balance'] -  $allAmount - $reserveAmount ?><b></b></span>
+<span><?= (int)$_SESSION['balance'] - (int)$allAmount - (int)$reserveAmount ?><b></b></span>
+
       </div>
       <div class="balance">
         <img src="assets/img/bitcoin.svg" alt="" class="balance-icon">

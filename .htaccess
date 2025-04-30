@@ -1,0 +1,10 @@
+# Убедитесь, что .php файлы обрабатываются как PHP
+AddType application/x-httpd-php .php
+
+# Разрешить запросы GET и POST для всех пользователей
+<Limit GET POST>
+    Require all granted
+</Limit>
+
+ErrorDocument 404 /index.php
+

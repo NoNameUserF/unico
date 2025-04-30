@@ -1,5 +1,5 @@
 <?php 
-include ('/app/controllers/passport.php');?>
+include ('app/controllers/passport.php');?>
 <div class="activity">
   <h2>Activity</h2>
   <p style='text-align:center; color:tomato'><?=$activityMessage ?></p>
@@ -11,7 +11,7 @@ include ('/app/controllers/passport.php');?>
       <th class="date">Date</th>
       <th class="amound">Amuond</th>
     </tr>
-    <!-- <tr class="one-action">
+     <tr class="one-action">
             <td class="transactions-cell">
               <img src="assets/img/bitcoin.svg" alt="" />BTC
             </td>
@@ -46,6 +46,6 @@ include ('/app/controllers/passport.php');?>
             <td class="status-cell">Wit</td>
             <td class="date-cell">04.09.22</td>
             <td class="amound-cell amound-cell-withdraw">+ 470</td>
-          </tr> -->
+          </tr>
   </table>
 </div>

@@ -2,8 +2,10 @@
 include 'app/include/header.php'; 
 include "app/controllers/users.php";
 
-session_start();
-?>
+if (!isset($_SESSION['id'])) {
+    header('Location: index.php');
+    exit();
+}	?>
 <div class='confirm-tel-active'>
   <div class='confirm-tel-info'>
     <h2 class='confirm-tel-text'>An SMS has been sent to your phone, please confirm it</h2>
