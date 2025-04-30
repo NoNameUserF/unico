@@ -1,5 +1,4 @@
 <?php 
-include 'app/include/header.php'; 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -23,6 +22,8 @@ foreach ($passports as $passport) {
         break;
     }
 }
+
+include 'app/include/header.php'; 
 ?>
 
 <section class="lk-user-main">
