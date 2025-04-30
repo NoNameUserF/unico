@@ -131,5 +131,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["button-yes"])) {
     ];
     
     update('passports', $id, $newConf);   
+    header('Location: ak.php');
 }
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["button-add-tel"])) {
+    $id = intval($_POST['id']);
+    $tel =  intval($_POST['set_tel']);
+
+    $newTel = [
+        'admin_tel' => $tel,
+    ];
+    
+    update('users', $id, $newTel);   
+    header('Location: ak.php');
+}
+
+
 ?>
