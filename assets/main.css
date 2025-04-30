@@ -3117,6 +3117,12 @@ td.today {
   line-height: 140%;
 }
 
+.download {
+  color: #00c2ff;
+  background-color: transparent;
+  border: none;
+}
+
 .ak-wallet-number-wrapper {
   display: flex;
   gap: 13px;

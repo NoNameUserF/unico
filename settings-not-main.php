@@ -60,7 +60,7 @@ foreach ($passports as $passport) {
           <div class="profile-info-warpper">
             <div class="profile-info-inner-wrapper">
               <span>email:</span>
-             <span><?= isset($_SESSION['email']) ? $_SESSION['email'] : 'Email not available' ?></span>
+              <span><?= isset($_SESSION['email']) ? $_SESSION['email'] : 'Email not available' ?></span>
             </div>
           </div>
         </div>
@@ -101,19 +101,21 @@ foreach ($passports as $passport) {
         <div class="document-wrapper">
           <img src="assets/img/contract.svg" alt="">
           <h3>Contract</h3>
+
+          <button class='download' onclick="downloadFiles()">Download</button>
           <a download href="#">Download</a>
 
           <?php if ($_SESSION['conf'] == 0): ?>
-            <form action="settings-not-main.php" method="post" style="display:flex; align-items:center; margin-top:30px">
-              <input id="confirm" type="checkbox" style="width:20px" name="conf" value="1">
-              <input type="hidden" name="id" value="<?= $_SESSION['id'] ?>">
-              <label for="confirm" style="font-size:12px">I agree</label>
-              <button name="cnf" style="margin-left:auto;" type="submit">Confirm</button>
-            </form>
+          <form action="settings-not-main.php" method="post" style="display:flex; align-items:center; margin-top:30px">
+            <input id="confirm" type="checkbox" style="width:20px" name="conf" value="1">
+            <input type="hidden" name="id" value="<?= $_SESSION['id'] ?>">
+            <label for="confirm" style="font-size:12px">I agree</label>
+            <button name="cnf" style="margin-left:auto;" type="submit">Confirm</button>
+          </form>
           <?php else: ?>
-            <div style="margin-top:20px">
-              <a style="color:tomato" href="lk-user.php">Go to personal account</a>
-            </div>
+          <div style="margin-top:20px">
+            <a style="color:tomato" href="lk-user.php">Go to personal account</a>
+          </div>
           <?php endif; ?>
         </div>
       </div>
