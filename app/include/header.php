@@ -5,7 +5,7 @@
         session_start(); // Start session only if not started
     }
 
-    include ('app/controllers/admin.php');
+    include ('/app/controllers/admin.php');
   ?>
 
 
