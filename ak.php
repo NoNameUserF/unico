@@ -3,6 +3,7 @@ require_once "app/controllers/admin.php";
 
 
 require_once "app/include/header.php"; 
+include ('app/controllers/passport.php');
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();  // Запускаем сессию только если она еще не была начата
