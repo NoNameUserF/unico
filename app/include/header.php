@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <header class="header">
-  <?php 
-    if (session_status() == PHP_SESSION_NONE) {
-        session_start(); // Start session only if not started
-    }
-  ?>
 
   <html lang="en">
 
