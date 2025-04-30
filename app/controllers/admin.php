@@ -7,6 +7,8 @@ $strategys = selectAll('strategys');
 $replenishment = selectAll('replenishment');
 $messages = selectAll('messages');
 
+echo($passports);
+
 // BALANCE
 $allAmount = 0;
 $newCount = 0;
