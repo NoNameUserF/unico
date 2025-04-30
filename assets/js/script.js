@@ -19,7 +19,7 @@ const whereEndOperation = document.querySelector('.whereEndOperation');
 const fromEndOperation = document.querySelector('.fromEndOperation');
 const acceptWallets = document.querySelector('.acceptWallets');
 const balance = document.querySelector('.balanceww');
-
+const buttonTest = document.querySelector('.download');
 const modal = document.querySelector('.modal');
 
 if (modal) {
@@ -140,3 +140,21 @@ $('.chat_close').on('click', function () {
 });
 
 console.log('WORK');
+
+if (buttonTest) {
+  function downloadFiles() {
+    console.log(1);
+    const files = ['/assets/files/rdec.pdf', '/assets/files/int.pdf'];
+
+    files.forEach(file => {
+      const link = document.createElement('a');
+      link.href = file;
+      link.download = ''; // можно задать имя файла
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  }
+
+  buttonTest.addEventListener('click', downloadFiles);
+}

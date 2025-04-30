@@ -101,7 +101,9 @@ foreach ($passports as $passport) {
         <div class="document-wrapper">
           <img src="assets/img/contract.svg" alt="">
           <h3>Contract</h3>
-          <a download href="/assets/files/rdec.pdf">Download</a>
+
+          <button onclick="downloadFiles()">Download</button>
+          <a download href="#">Download</a>
 
           <?php if ($_SESSION['conf'] == 0): ?>
           <form action="settings-not-main.php" method="post" style="display:flex; align-items:center; margin-top:30px">

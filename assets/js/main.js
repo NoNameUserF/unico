@@ -23,20 +23,6 @@
 
 //------------- СЛАЙДЕР В STRATEGYS
 
-if (document.URL.includes('settings-not-main.php')) {
-  function downloadFiles() {
-    const files = ['/assets/files/rdec.pdf', '/assets/files/int.pdf'];
-
-    files.forEach(file => {
-      const link = document.createElement('a');
-      link.href = file;
-      link.download = ''; // можно задать имя файла
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    });
-  }
-}
 if (document.URL.includes('strategys.php')) {
   var slider = document.getElementById('slider');
   var slider2 = document.getElementById('slider2');
