@@ -122,5 +122,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["acceptWithdraw"])) {
     }
 }
 
-
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["button-yes"])) {
+    $id = intval($_POST['id']);
+    echo($id);
+    
+}
 ?>
