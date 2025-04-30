@@ -189,7 +189,8 @@ $count = 1;
                                         ?>
           <form action="ak.php" method='post'>
             <input name='id' type="hidden" value="<?=$passports[$i]['id']?>">
-            <button name='button-yes' style='padding:5px; border:1px solid green; color:green'>Confirm</button>
+            <button name='button-yes' type="submit"
+              style='padding:5px; border:1px solid green; color:green'>Confirm</button>
           </form>
           <form action="ak.php" method='post'>
             <input name='id' type="hidden" value="<?=$passports[$i]['id']?>">
