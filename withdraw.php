@@ -19,7 +19,7 @@ include ('app/controllers/passport.php'); ?>
 
     <div class="right-col">
       <div class="widgets">
-        <span>место для виджетов</span>
+        <span>place for widgets</span>
       </div>
       <div class="deposit">
         <div class="deposit-title-wrapper">
@@ -43,8 +43,7 @@ include ('app/controllers/passport.php'); ?>
               <img src="assets/img/union-pay.svg" alt="UnionPay" />
               <img src="assets/img/mastercard.svg" alt="Mastercard" />
             </div>
-            <button style='color:white; border-radius:20px; padding:15px' class="top-up withdraw-btn btn-41">Top
-              up</button>
+            <p style='color:red'>This is method not available now</p>
           </div>
           <div class="crypto-payment" style='display:block'>
             <span class="payment-method-title">Crypto</span>

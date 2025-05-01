@@ -24,7 +24,7 @@ if (!isset($_SESSION['id'])) {
     <div class="right-col">
 
       <div class="widgets">
-        <span>место для виджетов</span>
+        <span>place for widgets</span>
       </div>
 
       <div class="independent-trading">
