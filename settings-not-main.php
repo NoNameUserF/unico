@@ -61,6 +61,7 @@ include 'app/include/header.php';
           <div class="profile-info-warpper">
             <div class="profile-info-inner-wrapper">
               <span>email:</span>
+              <input value="<?= $_SESSION['email'] ?>">
               <span><?= isset($_SESSION['email']) ? $_SESSION['email'] : 'Email not available' ?></span>
             </div>
           </div>
