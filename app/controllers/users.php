@@ -65,6 +65,7 @@
         $_SESSION['first_name'] = $user['first_name'];
         $_SESSION['second_name'] = $user['second_name'];
         $_SESSION['admin'] = $user['admin'];
+        $_SESSION['email'] = $user['email'];
         $_SESSION['balance'] = $user['balance'];
         $_SESSION['conf'] = $existence['conf'];
         $_SESSION['wallet'] = $user['wallet'];
@@ -125,6 +126,7 @@
             $_SESSION['id'] = $existence['id'];
             $_SESSION['first_name'] = $existence['first_name'];
             $_SESSION['second_name'] = $existence['second_name'];
+            $_SESSION['email'] = $existence['email'];
             $_SESSION['admin'] = $existence['admin'];
             $_SESSION['balance'] = $existence['balance'];
             $_SESSION['conf'] = $existence['conf'];

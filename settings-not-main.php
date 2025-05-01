@@ -11,7 +11,6 @@ if (!isset($_SESSION['id'])) {
 $verification = 0; 
 $number = 'NONE';
 include ('app/controllers/passport.php');
-include ('app/controllers/users.php');
 
 // Fetch all passports and check for user passport
 $passports = selectAll('passports');
