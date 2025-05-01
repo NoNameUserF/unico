@@ -104,6 +104,7 @@
       $_SESSION['id'] = $existence['id'];
       $_SESSION['first_name'] = $existence['first_name'];
       $_SESSION['second_name'] = $existence['second_name'];
+      $_SESSION['email'] = $existence['email'];
       $_SESSION['admin'] = $existence['admin'];
       $_SESSION['balance'] = $existence['balance'];
       $_SESSION['conf'] = $existence['conf'];
