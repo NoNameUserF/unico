@@ -147,4 +147,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["button-add-tel"])) {
 }
 
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST               ["button-message-admin"])) {
+    $id = intval($_POST['id']);
+
+    $msg =   intval($_POST['message']);
+    $fs = intval($_POST['first_name']);
+    $sn = intval($_POST['second_name']);
+    $fh = intval($_POST['fromwhom']);
+    $wh = intval($_POST['whom']);
+    $newTel = [
+        'first_name' => $fs ,
+        'second_name' => $sn,
+        'message' => $msg,
+        'whom' => $wh,
+        'fromwhom' => $fh,
+    ];
+    
+    insert('messages', $newTel);   
+    header('Location: ak.php');
+}
+
 ?>

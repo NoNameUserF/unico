@@ -105,6 +105,7 @@ $count = 1;
             ?>
             </ul>
             <form action="" method="post" class="form_chat">
+              <input name='id' type="hidden" value="<?=$user['id']?>">
               <input class="message" placeholder="Введите сообщение" name="message">
               <input name='first_name' type="hidden" value="<?=$_SESSION['first_name']?>">
               <input name='second_name' type="hidden" value="<?=$_SESSION['second_name']?>">
