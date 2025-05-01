@@ -68,7 +68,6 @@
   </div>
 </section>
 
-Strategies
 <section class="portfolio">
   <div class="container">
     <h2 class="wow animate__animated animate__fadeInLeft" data-wow-offset="50">Digital assed portfolio</h2>

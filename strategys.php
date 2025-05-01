@@ -106,7 +106,7 @@ if (!isset($_SESSION['id'])) {
             </div>
             <div class="strategy-info info-income-per-year">
               <span class="strategy-info-title">Income per year</span>
-              <span class="strategy-info-value">10 %</span>
+              <span class="strategy-info-value">8 %</span>
             </div>
             <input name='id_user' type="hidden" value=<?=$_SESSION['id']?>>
             <input name='name' type="hidden" value="ETF Star">
@@ -160,7 +160,7 @@ if (!isset($_SESSION['id'])) {
           <div class="strategy-info-wrapper">
             <div class="strategy-info info-minimum-capital">
               <span class="strategy-info-title">Minimum capital</span>
-              <span class="strategy-info-value">25k USDT</span>
+              <span class="strategy-info-value">5k USDT</span>
             </div>
             <div class="strategy-info info-minimum-term">
               <span class="strategy-info-title">Minimum term</span>
@@ -168,7 +168,7 @@ if (!isset($_SESSION['id'])) {
             </div>
             <div class="strategy-info info-income-per-year">
               <span class="strategy-info-title">Income per year</span>
-              <span class="strategy-info-value">25 %</span>
+              <span class="strategy-info-value">31 %</span>
             </div>
             <input name='id_user' type="hidden" value=<?=$_SESSION['id']?>>
             <input name='name' type="hidden" value="Crypto 10">
@@ -220,7 +220,7 @@ if (!isset($_SESSION['id'])) {
           <div class="strategy-info-wrapper">
             <div class="strategy-info info-minimum-capital">
               <span class="strategy-info-title">Minimum capital</span>
-              <span class="strategy-info-value">25k USDT</span>
+              <span class="strategy-info-value">10k USDT</span>
             </div>
             <div class="strategy-info info-minimum-term">
               <span class="strategy-info-title">Minimum term</span>
@@ -280,7 +280,7 @@ if (!isset($_SESSION['id'])) {
           <div class="strategy-info-wrapper">
             <div class="strategy-info info-minimum-capital">
               <span class="strategy-info-title">Minimum capital</span>
-              <span class="strategy-info-value">25k USDT</span>
+              <span class="strategy-info-value">1k USDT</span>
             </div>
             <div class="strategy-info info-minimum-term">
               <span class="strategy-info-title">Minimum term</span>
