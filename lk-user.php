@@ -31,6 +31,7 @@ if (isset($_SESSION['amount'])) {
 }
 
 // Сообщения
+$messages = selectAll('messages');
 
 ?>
 
