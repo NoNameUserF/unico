@@ -12,8 +12,8 @@ if (!isset($_SESSION['id'])) {
   exit();
 }
 
-if ($user['confirm_tel'] !== $user['admin_tel']) {
-  header('location: ' . 'confirm.php' );
+if ($user['confirm_tel'] !== $user['admin_tel'] || $user['confirm_tel'] == '-') {
+  header('location: confirm.php' );
   exit();
 }
 
@@ -31,7 +31,6 @@ if (isset($_SESSION['amount'])) {
 }
 
 // Сообщения
-$messages = selectAll('messages');
 
 ?>
 
@@ -54,7 +53,7 @@ $messages = selectAll('messages');
         <p style="text-align: center; color: tomato;"><?= htmlspecialchars($strategysMessage) ?></p>
         <img src="assets/img/lk-user-graph-1.png" alt="">
       </div>
-    <div class="diver-graph-wrapper">
+      <div class="diver-graph-wrapper">
         <div class="diversification">
           <p style='text-align:center; color:tomato'><?=$strategysMessage ?></p>
           <h2>Diversification</h2>

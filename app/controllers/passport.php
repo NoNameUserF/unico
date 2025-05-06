@@ -124,7 +124,7 @@ if (!isset($_SESSION['id'])) {
 // Get user data from the database
 $user = selectOne('users', ['id' => $_SESSION['id']]);
 $strategys = selectAll('strategys');
-$messages = selectAll('messages');
+
 
 // Message handling based on strategies
 foreach ($strategys as $key => $value) {
