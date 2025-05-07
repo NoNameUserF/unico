@@ -1118,12 +1118,14 @@ footer span {
 .strategy-wrapper,
 .user-info-name {
   display: flex;
+  align-items: center;
   gap: 6px;
 }
 
 .user-info-name {
   flex-direction: column;
   max-width: 140px;
+  align-items: flex-start;
 }
 
 .verification-wrapper span {
