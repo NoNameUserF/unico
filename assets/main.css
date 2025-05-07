@@ -1119,7 +1119,11 @@ footer span {
 .user-info-name {
   display: flex;
   gap: 6px;
-  align-items: center;
+}
+
+.user-info-name {
+  flex-direction: column;
+  max-width: 140px;
 }
 
 .verification-wrapper span {
