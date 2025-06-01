@@ -129,6 +129,10 @@ $count = 1;
           </form>
         </div>
         <div class="ak-user-row">
+          <span class="ak-user-row-title">Почта</span>
+          <div class="ak-user-sum-vacant-wrapper">
+            <span class="ak-user-sum-vacant"><?= $user['email']?></span>
+          </div>
           <span class="ak-user-row-title">Баланс</span>
           <div class="ak-user-sum-vacant-wrapper">
             <span class="ak-user-sum-vacant-title">Общий</span>
