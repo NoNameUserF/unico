@@ -140,17 +140,22 @@ foreach ($strategys as $key => $value) {
 
 
 if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["editBtn"])){
-    
-    $conf =1;
     $id = $_POST['id'];  
+
+    $newName = $_POST['newName'];
+    $newF = $_POST['newFam'];
+    $newE = $_POST['newEmail'];
+    $newP = $_POST['newPhone'];
+     
     $post = [
-        'conf' =>$conf 
+        'first_name' =>$newName,
+        'second_name' =>$newF,
+        'email' =>$newE,
+        'phone' =>$newP,
     ];
     
     update('users', $id ,$post);
-    $user = selectOne('users', ['id' => $id] );
-    $_SESSION['conf'] = $user['conf'];
-    
+
     
 }
 
