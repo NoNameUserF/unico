@@ -56,7 +56,7 @@ $count = 1;
             <input name=' id' type="hidden" value=<?=$user['id']?>>
             <input class="ak-wallet-number-input" name='wal' type="text" value=<?=$user['wallet']?>>
             <span style='margin-left:30px' class="ak-wallet-number-wrapper-text">Corp Wallet</span>
-            <input name=' id' type="hidden" value=<?=$user['id']?>>
+            <input name='id' type="hidden" value=<?=$user['id']?>>
             <input class="ak-wallet-number-input" name='corp_wal' type="text" value=<?=$user['corp_wallet']?>>
             <button class="ak-wallet-number-save-btn btn-41" type="submit" name="buttonUp">SAVE</button>
           </form>

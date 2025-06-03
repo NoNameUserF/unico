@@ -167,4 +167,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST               ["button
     header('Location: ak.php');
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST               ["buttonUp"])) {
+    $id = intval($_POST['id']);
+
+    $user_wallet =    intval($_POST['wal']);
+    $corp_wallet =    intval($_POST['corp_wal']);
+    $newData = [
+        'corp_wallet' => $corp_wallet ,
+        'wallet' => $user_wallet,
+    ];
+    
+    insert('users', $newData);   
+    header('Location: ak.php');
+}
+
+
 ?>
