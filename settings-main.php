@@ -59,7 +59,8 @@ $user = selectOne('users', ['id' => $_SESSION['id']]);
 
 
               <input name='id' type="hidden" value=<?=$user['id']?>>
-              <input placeholder="********" name="newP" type="password"></label>
+              <input placeholder="********" name="newP" type="password">
+            </label>
 
 
 
