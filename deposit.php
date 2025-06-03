@@ -1,7 +1,7 @@
 <?php
 require_once "app/controllers/admin.php";
 require_once 'app/include/header.php'; 
-
+require_once "app/database/db.php";
 
 if (!isset($_SESSION['id'])) {
     header('Location: index.php');
@@ -12,7 +12,7 @@ if (!isset($_SESSION['id'])) {
     exit();
 }
 
-  
+$user = selectOne('users', ['id' => $_SESSION['id']]);
 ?>
 <section class="lk-user-main">
   <div class="container">
@@ -40,12 +40,13 @@ if (!isset($_SESSION['id'])) {
           <div class="wallet-name-inner-wrapper">
             <span class="wallet-name">Wallet name:</span>
 
-            <?php if(isset($_SESSION['wallet'])):?>
+            <span id="cryptoId" class="crypto-id"><?=$user['wallet']?></span>
+            <!-- <?php if(isset($_SESSION['wallet'])):?>
             <span id="cryptoId" class="crypto-id"><?=$_SESSION['wallet']?></span>
             <?php endif?>
             <?php if(!isset($_SESSION['wallet'])):?>
             <span id="cryptoId" class="crypto-id">pok8341dg200349</span>
-            <?php endif?>
+            <?php endif?> -->
           </div>
         </div>
         <div class="payment-methods-wrapper">
@@ -102,12 +103,13 @@ if (!isset($_SESSION['id'])) {
         <div class="crypto-adress">
           <span>Your address</span>
 
-          <?php if(isset($_SESSION['corp_wallet'])):?>
+          <span id="cryptoId" class="crypto-id"><?=$user['corp_wallet']?></span>
+          <!-- <?php if(isset($_SESSION['corp_wallet'])):?>
           <span id="cryptoId" class="crypto-id"><?=$_SESSION['corp_wallet']?></span>
           <?php endif?>
           <?php if(!isset($_SESSION['corp_wallet'])):?>
           <span id="cryptoId" class="crypto-id">pok8341dg200349</span>
-          <?php endif?>
+          <?php endif?> -->
           <button onclick="copytext('#cryptoId')" type="button" class="copy">
             copy <img src="./assets/img/copy.svg" alt="" />
           </button>
