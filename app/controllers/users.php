@@ -51,7 +51,8 @@
           'phone' =>$tel,
           'conf' => 0,
           'confirm_tel' => '-',
-          'admin_tel' => 0
+          'admin_tel' => 0,
+          'changing_data' => 0	
           
         ];
       
@@ -73,6 +74,7 @@
         $_SESSION['corp_wallet'] = $user['corp_wallet'];
         $_SESSION['verification'] = 0;
         $_SESSION['confirm_tel'] = $existence['confirm_tel'];
+        $_SESSION['changing_data'] = $existence['changing_data'];
         header('location: ' . 'confirm.php' );
         
       }
@@ -112,6 +114,7 @@
       $_SESSION['amount'] = $existence['amount'];
       $_SESSION['corp_wallet'] = $existence['corp_wallet'];
       $_SESSION['confirm_tel'] = '-';
+      $_SESSION['changing_data'] = $existence['changing_data'];
       header('location:' . 'confirm.php');
       
     }else {
@@ -135,7 +138,7 @@
             $_SESSION['amount'] = $existence['amount'];
             $_SESSION['corp_wallet'] = $existence['corp_wallet'];
             $_SESSION['confirm_tel'] = $existence['confirm_tel'];
-  
+            $_SESSION['changing_data'] = $existence['changing_data'];
             header('location: ' . 'lk-user.php');
           
           }elseif (!password_verify($pass , $existence['password'])) { 

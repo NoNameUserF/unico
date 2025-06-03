@@ -1,9 +1,12 @@
-<?php require_once 'app/include/header.php'; 
+<?php
 include "app/controllers/passport.php";
+require_once 'app/include/header.php'; 
 
+require_once "app/database/db.php";
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
+$user = selectOne('users', ['id' => $_SESSION['id']]);
 ?>
 <section class="lk-user-main">
   <div class="container">
@@ -25,12 +28,19 @@ if (session_status() == PHP_SESSION_NONE) {
       <div class="settings-container">
         <div class="personal-info-wrapper">
           <h2>Personal info</h2>
-          <form action="#" class="personal-info">
-            <label>First name<input placeholder="Jon" type="text"></label>
-            <label>Second name<input placeholder="Michael" type="text"></label>
-            <label>Email<input placeholder="JonMichael@gmail.com" type="email"></label>
-            <label>Phone<input class="num-only" placeholder="010-534-757-87" type="tel"></label>
-            <input class="btn-41" value="Edit" type="submit">
+          <form action="settings-main.php" class="personal-info">
+            <input name='id' type="hidden" value=<?=$user['id']?>>
+            <label>First name
+              <input name="newName" placeholder="Jon" type="text">
+            </label>
+            <label>Second name
+              <input name="newFam" placeholder="Michael" type="text">
+            </label>
+            <label>Email
+              <input name="newEmail" placeholder="JonMichael@gmail.com" type="email">
+            </label>
+            <label>Phone<input name="newPhone" class="num-only" placeholder="010-534-757-87" type="tel"></label>
+            <button class="btn-41" name="editBtn" value="Edit" type="submit"></button>
           </form>
         </div>
         <div class="password">
