@@ -176,7 +176,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["editPass"])){
 
     $post = [
         'password' =>$passwordS,
-        "new__pass" =>1,
+        "new_pass" =>1,
     ];
 
     
@@ -184,7 +184,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["editPass"])){
     $user = selectOne('users', ['id' => $id] );
 
     $_SESSION['password'] = $user['password'];
-    $_SESSION['new__pass'] = 1;
+    $_SESSION['new_pass'] = 1;
     header('Location: settings-main.php');
     
 }
