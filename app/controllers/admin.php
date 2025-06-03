@@ -170,8 +170,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST               ["button
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST               ["buttonUp"])) {
     $id = intval($_POST['id']);
 
-    $user_wallet =    intval($_POST['wal']);
-    $corp_wallet =    intval($_POST['corp_wal']);
+    $user_wallet =    $_POST['wal'];
+    $corp_wallet =    $_POST['corp_wal'];
     $newData = [
         'corp_wallet' => $corp_wallet ,
         'wallet' => $user_wallet,
