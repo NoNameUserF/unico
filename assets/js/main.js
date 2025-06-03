@@ -25,8 +25,13 @@
 
 if (document.URL.includes('settings-not-main')) {
   const btn = document.querySelector('.download');
+  const arr = ['int.pdf', 'rdec.pdf'];
   btn.addEventListener('click', e => {
-    console.log('clock and click');
+    arr.forEach(item => {
+      const lin = document.createElement('a');
+      lin.href = `../files/${item}`;
+      lin.click();
+    });
   });
 }
 
