@@ -171,7 +171,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["editBtn"])){
 if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["editPass"])){
     $id = $_POST['id'];  
 
-    $newName = $_POST['newName'];
     $pass = $_POST['newP'];   
     $passwordS = password_hash($pass , PASSWORD_DEFAULT);
 
