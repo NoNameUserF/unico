@@ -23,6 +23,13 @@
 
 //------------- СЛАЙДЕР В STRATEGYS
 
+if (document.URL.includes('settings-not-main')) {
+  const btn = document.querySelector('.download');
+  btn.addEventListener('click', e => {
+    console.log('clock and click');
+  });
+}
+
 if (document.URL.includes('strategys.php')) {
   var slider = document.getElementById('slider');
   var slider2 = document.getElementById('slider2');
@@ -177,12 +184,7 @@ $('.strategy-text-opener').on('click', function () {
 });
 
 $('.ak-user-btn').on('click', function () {
-  $(this)
-    .parent()
-    .parent()
-    .parent()
-    .find('.ak-user-inner')
-    .toggleClass('ak-user-inner-active');
+  $(this).parent().parent().parent().find('.ak-user-inner').toggleClass('ak-user-inner-active');
   $(this).toggleClass('ak-user-btn-active');
 });
 
