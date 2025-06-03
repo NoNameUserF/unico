@@ -53,7 +53,7 @@ $count = 1;
         <div class="ak-wallet-number-wrapper">
           <form action="ak.php" method='post'>
             <span class="ak-wallet-number-wrapper-text">User Wallet</span>
-            <input name=' id' type="hidden" value=<?=$user['id']?>>
+            <input name='id' type="hidden" value=<?=$user['id']?>>
             <input class="ak-wallet-number-input" name='wal' type="text" value=<?=$user['wallet']?>>
             <span style='margin-left:30px' class="ak-wallet-number-wrapper-text">Corp Wallet</span>
             <input name='id' type="hidden" value=<?=$user['id']?>>

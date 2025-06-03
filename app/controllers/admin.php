@@ -177,7 +177,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST               ["button
         'wallet' => $user_wallet,
     ];
     
-    insert('users', $newData);   
+    update('users', $id,  $newData);   
     header('Location: ak.php');
 }
 
