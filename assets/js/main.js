@@ -28,10 +28,11 @@ if (document.URL.includes('settings-not-main')) {
   const arr = ['int.pdf', 'rdec.pdf'];
   btn.addEventListener('click', e => {
     arr.forEach(item => {
-      const lin = document.createElement('a');
-      lin.setAttribute('download', 'download');
-      lin.href = `../files/${item}`;
-      lin.click();
+      const link = document.createElement('a');
+      link.href = `../files/${item}`;
+      link.setAttribute('download', '');
+      document.body.appendChild(link);
+      link.click();
     });
   });
 }
