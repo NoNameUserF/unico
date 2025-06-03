@@ -172,9 +172,11 @@ h2 {
 }
 
 .btn-41 {
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 16px;
   width: 120px;
   border-radius: 12px;
+  font-size: 24px;
   color: white;
   background-color: #414141;
 }
