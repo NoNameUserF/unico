@@ -172,6 +172,8 @@ h2 {
 }
 
 .btn-41 {
+  padding: 24px;
+  color: white;
   background-color: #414141;
 }
 
@@ -1113,8 +1115,7 @@ footer span {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
-.verification-wrapper,
+btn-41 .verification-wrapper,
 .strategy-wrapper,
 .user-info-name {
   display: flex;
