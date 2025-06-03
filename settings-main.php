@@ -41,7 +41,15 @@ $user = selectOne('users', ['id' => $_SESSION['id']]);
             </label>
             <label>Phone
               <input name="newPhone" class="num-only" placeholder="010-534-757-87" type="tel"></label>
+
+
+            <?php if($_SESSION['changing_data'] == 0):?>
             <button class="btn-41" name="editBtn" type="submit">Edit</button>
+            <?php endif?>
+            <?php if($_SESSION['changing_data'] == 1):?>
+            <p style="color:red; font-size: 16px;">You can change the data after 30 days </p>
+            <?php endif?>
+
           </form>
         </div>
         <div class="password">

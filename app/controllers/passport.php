@@ -152,9 +152,18 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["editBtn"])){
         'second_name' =>$newF,
         'email' =>$newE,
         'phone' =>$newP,
+        "changing_data" =>1,
     ];
+
     
     update('users', $id ,$post);
+    $user = selectOne('users', ['id' => $id] );
+
+    $_SESSION['firs_name'] = $user['first_name'];
+    $_SESSION['second_name'] = $user['second_name'];
+    $_SESSION['email'] = $user['email'];
+    $_SESSION['phone'] = $user['phone'];
+    $_SESSION['changing_data'] = 1;
     header('Location: settings-main.php');
     
 }
