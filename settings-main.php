@@ -39,8 +39,9 @@ $user = selectOne('users', ['id' => $_SESSION['id']]);
             <label>Email
               <input name="newEmail" placeholder="JonMichael@gmail.com" type="email">
             </label>
-            <label>Phone<input name="newPhone" class="num-only" placeholder="010-534-757-87" type="tel"></label>
-            <button class="btn-41" name="editBtn" value="Edit" type="submit"></button>
+            <label>Phone
+              <input name="newPhone" class="num-only" placeholder="010-534-757-87" type="tel"></label>
+            <button class="btn-41" name="editBtn" type="submit">Edit</button>
           </form>
         </div>
         <div class="password">

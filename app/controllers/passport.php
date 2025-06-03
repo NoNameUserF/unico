@@ -136,4 +136,22 @@ foreach ($strategys as $key => $value) {
     }
 }
 
+
+
+
+if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["editBtn"])){
+    
+    $conf =1;
+    $id = $_POST['id'];  
+    $post = [
+        'conf' =>$conf 
+    ];
+    
+    update('users', $id ,$post);
+    $user = selectOne('users', ['id' => $id] );
+    $_SESSION['conf'] = $user['conf'];
+    
+    
+}
+
 ?>
