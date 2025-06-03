@@ -28,7 +28,7 @@ $user = selectOne('users', ['id' => $_SESSION['id']]);
       <div class="settings-container">
         <div class="personal-info-wrapper">
           <h2>Personal info</h2>
-          <form action="settings-main.php" class="personal-info">
+          <form action="settings-main.php" method="post" class="personal-info">
             <input name='id' type="hidden" value=<?=$user['id']?>>
             <label>First name
               <input name="newName" placeholder="Jon" type="text">
