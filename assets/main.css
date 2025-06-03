@@ -173,6 +173,8 @@ h2 {
 
 .btn-41 {
   padding: 24px;
+  width: 120px;
+  border-radius: 12px;
   color: white;
   background-color: #414141;
 }
