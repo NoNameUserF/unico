@@ -159,11 +159,33 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["editBtn"])){
     update('users', $id ,$post);
     $user = selectOne('users', ['id' => $id] );
 
-    $_SESSION['firs_name'] = $user['first_name'];
+    $_SESSION['first_name'] = $user['first_name'];
     $_SESSION['second_name'] = $user['second_name'];
     $_SESSION['email'] = $user['email'];
     $_SESSION['phone'] = $user['phone'];
     $_SESSION['changing_data'] = 1;
+    header('Location: settings-main.php');
+    
+}
+
+if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["editPass"])){
+    $id = $_POST['id'];  
+
+    $newName = $_POST['newName'];
+    $pass = $_POST['newP'];   
+    $passwordS = password_hash($pass , PASSWORD_DEFAULT);
+
+    $post = [
+        'password' =>$newName,
+        "new__pass" =>1,
+    ];
+
+    
+    update('users', $id ,$post);
+    $user = selectOne('users', ['id' => $id] );
+
+    $_SESSION['password'] = $user['password'];
+    $_SESSION['new__pass'] = 1;
     header('Location: settings-main.php');
     
 }

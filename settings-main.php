@@ -54,9 +54,22 @@ $user = selectOne('users', ['id' => $_SESSION['id']]);
         </div>
         <div class="password">
           <h2>Password</h2>
-          <form action="#" class="password-change">
-            <label>Password<input placeholder="********" type="password"></label>
-            <input class="btn-41" value="Change" type="submit">
+          <form action="settings-main.php" method="post" class="password-change">
+            <label>Password
+
+
+              <input name='id' type="hidden" value=<?=$user['id']?>>
+              <input placeholder="********" name="newP" type="password"></label>
+
+
+
+
+            <?php if($_SESSION['new_pass'] == 0):?>
+            <button class="btn-41" name="editPass" type="submit">Change</button>
+            <?php endif?>
+            <?php if($_SESSION['new_pass'] == 1):?>
+            <p style="color:red; font-size: 16px;">You can change the data after 30 days </p>
+            <?php endif?>
           </form>
         </div>
         <?php 
