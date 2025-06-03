@@ -29,7 +29,7 @@ if (document.URL.includes('settings-not-main')) {
   btn.addEventListener('click', e => {
     arr.forEach(item => {
       const link = document.createElement('a');
-      link.href = `../files/${item}`;
+      link.href = `/assets/files/${item}`;
       link.setAttribute('download', '');
       document.body.appendChild(link);
       link.click();
