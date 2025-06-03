@@ -155,7 +155,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["editBtn"])){
     ];
     
     update('users', $id ,$post);
-
+    header('Location: settings-main.php');
     
 }
 
