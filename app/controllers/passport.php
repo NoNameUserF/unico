@@ -176,7 +176,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["editPass"])){
     $passwordS = password_hash($pass , PASSWORD_DEFAULT);
 
     $post = [
-        'password' =>$newName,
+        'password' =>$passwordS,
         "new__pass" =>1,
     ];
 
