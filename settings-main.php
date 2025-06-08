@@ -30,22 +30,79 @@ $user = selectOne('users', ['id' => $_SESSION['id']]);
           <h2>Personal info</h2>
           <form action="settings-main.php" method="post" class="personal-info">
             <input name='id' type="hidden" value=<?=$user['id']?>>
-            <label>First name
-              <input name="newName" placeholder="Jon" type="text">
-            </label>
-            <label>Second name
-              <input name="newFam" placeholder="Michael" type="text">
-            </label>
-            <label>Email
-              <input name="newEmail" placeholder="JonMichael@gmail.com" type="email">
-            </label>
-            <label>Phone
-              <input name="newPhone" class="num-only" placeholder="010-534-757-87" type="tel"></label>
 
 
             <?php if($_SESSION['changing_data'] == 0):?>
-            <button class="btn-41" name="editBtn" type="submit">Edit</button>
+            <label>First name
+              <input name="newName" placeholder="Jon" type="text">
+            </label>
+
             <?php endif?>
+
+            <?php if($_SESSION['changing_data'] == 0):?>
+            <label>Second name
+              <input name="newFam" placeholder="Michael" type="text">
+            </label>
+
+
+            <?php endif?>
+
+            <?php if($_SESSION['changing_data'] == 0):?>
+            <label>Email
+              <input name="newEmail" placeholder="JonMichael@gmail.com" type="email">
+            </label>
+            <?php endif?>
+
+            <?php if($_SESSION['changing_data'] == 0):?>
+            <label>Phone
+              <input name="newPhone" class="num-only" placeholder="010-534-757-87" type="tel"></label>
+            <?php endif?>
+
+
+
+
+
+
+
+
+
+
+
+            <?php if($_SESSION['changing_data'] == 1):?>
+            <label>First name
+              <input disabled value=<?=$user['first_name']?> name="newName" placeholder="Jon" type="text">
+            </label>
+
+            <?php endif?>
+
+            <?php if($_SESSION['changing_data'] == 1):?>
+            <label>Second name
+              <input disabled value=<?=$user['second_name']?> name="newFam" placeholder="Michael" type="text">
+            </label>
+
+
+            <?php endif?>
+
+            <?php if($_SESSION['changing_data'] == 1):?>
+            <label>Email
+              <input disabled value=<?=$user['email']?> name="newEmail" placeholder="JonMichael@gmail.com" type="email">
+            </label>
+            <?php endif?>
+
+            <?php if($_SESSION['changing_data'] == 1):?>
+            <label>Phone
+              <input disabled name="newPhone" class="num-only" value=<?=$user['phone']?> type="tel"></label>
+            <?php endif?>
+
+
+
+
+
+
+
+
+
+
             <?php if($_SESSION['changing_data'] == 1):?>
             <p style="color:red; font-size: 16px;">You can change the data after 30 days </p>
             <?php endif?>
@@ -55,12 +112,19 @@ $user = selectOne('users', ['id' => $_SESSION['id']]);
         <div class="password">
           <h2>Password</h2>
           <form action="settings-main.php" method="post" class="password-change">
+            <?php if($_SESSION['new_pass'] == 0):?>
             <label>Password
-
-
               <input name='id' type="hidden" value=<?=$user['id']?>>
               <input placeholder="********" name="newP" type="password">
             </label>
+            <?php endif?>
+            <?php if($_SESSION['new_pass'] == 1):?>
+            <label>Password
+              <input name='id' type="hidden" value=<?=$user['id']?>>
+              <input placeholder="********" name="newP" type="password" disabled>
+            </label>
+            <?php endif?>
+
 
 
 
