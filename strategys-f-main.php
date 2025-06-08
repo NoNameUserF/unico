@@ -37,7 +37,11 @@
       </div>
       <div class="main-strategy-graph">
         <p>This is how the profitability of the strategy has changed over time</p>
-        <img class="main-strategy-graph-img" src="assets/img/cr10.jpg" alt="">
+        <div style="display: flex; flex-direction: column; gap : 16px;">
+          <img class="main-strategy-graph-img" src="assets/img/cr10.jpg" alt="">
+          <p style="font-size: 16px;">January 2022 - december 2024</p>
+        </div>
+
       </div>
     </div>
 
@@ -77,7 +81,11 @@
       </div>
       <div class="main-strategy-graph">
         <p>This is how the profitability of the strategy has changed over time</p>
-        <img class="main-strategy-graph-img" src="assets/img/bab.jpg" alt="">
+        <div style="display: flex; flex-direction: column; gap : 16px;">
+          <img class="main-strategy-graph-img" src="assets/img/bab.jpg" alt="">
+          <p style="font-size: 16px;">January 2022 - december 2024</p>
+        </div>
+
       </div>
     </div>
 
@@ -161,7 +169,11 @@
       </div>
       <div class="main-strategy-graph">
         <p>This is how the profitability of the strategy has changed over time</p>
-        <img class="main-strategy-graph-img" src="assets/img/etf.jpg" alt="">
+        <div style="display: flex; flex-direction: column; gap : 16px;">
+          <img class="main-strategy-graph-img" src="assets/img/etf.jpg" alt="">
+          <p style="font-size: 16px;">January 2022 - december 2024</p>
+        </div>
+
       </div>
     </div>
 
@@ -201,7 +213,13 @@
       </div>
       <div class="main-strategy-graph">
         <p>This is how the profitability of the strategy has changed over time</p>
-        <img class="main-strategy-graph-img" src="assets/img/arb.jpg" alt="">
+
+        <div style="display: flex; flex-direction: column; gap : 16px;">
+          <img class="main-strategy-graph-img" src="assets/img/arb.jpg" alt="">
+          <p style="font-size: 16px;">January 2023 - december 2024</p>
+        </div>
+
+
       </div>
     </div>
 
