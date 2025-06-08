@@ -100,7 +100,9 @@ $user = selectOne('users', ['id' => $_SESSION['id']]);
 
 
 
-
+            <?php if($_SESSION['changing_data'] == 0):?>
+            <button class="btn-41" name="editBtn" type="submit">Edit</button>
+            <?php endif?>
 
 
             <?php if($_SESSION['changing_data'] == 1):?>
