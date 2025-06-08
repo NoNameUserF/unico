@@ -29,7 +29,7 @@
               CAGR
             </span>
             <span class="main-strategy-item-text main-strategy-item-text-cagr">
-              34,2%
+              31%
             </span>
           </li>
         </ul>
@@ -102,7 +102,7 @@
               Minimal term
             </span>
             <span class="main-strategy-item-text">
-              1 mount
+              3 mount
             </span>
           </li>
           <li class="main-strategy-item">
@@ -110,7 +110,7 @@
               CAGR
             </span>
             <span class="main-strategy-item-text main-strategy-item-text-cagr">
-              6%
+              20%
             </span>
           </li>
         </ul>
@@ -118,7 +118,10 @@
       </div>
       <div class="main-strategy-graph">
         <p>This is how the profitability of the strategy has changed over time</p>
-        <img class="main-strategy-graph-img" src="assets/img/cntg.jpg" alt="">
+        <div style="display: flex; flex-direction: column; gap : 16px;">
+          <img class="main-strategy-graph-img" src="assets/img/cntg.jpg">
+          <p style="font-size: 24px;">Under Testing</p>
+        </div>
       </div>
     </div>
 
@@ -150,7 +153,7 @@
               CAGR
             </span>
             <span class="main-strategy-item-text main-strategy-item-text-cagr">
-              34.2%
+              8%
             </span>
           </li>
         </ul>
@@ -182,7 +185,7 @@
               Minimal term
             </span>
             <span class="main-strategy-item-text">
-              1 mount
+              3 mount
             </span>
           </li>
           <li class="main-strategy-item">

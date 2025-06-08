@@ -44,9 +44,9 @@
           <li class="menu-item">
             <a href="strategys-f-main.php" class="menu-link">Strategies</a>
           </li>
-          <li class="menu-item">
+          <!-- <li class="menu-item">
             <a href="Insurance.php" class="menu-link">Insurance</a>
-          </li>
+          </li> -->
           <?php if (isset($_SESSION['admin']) && $_SESSION['admin']): ?>
           <li class="menu-item">
             <a href="ak.php" class="menu-link">Admin panel</a>
