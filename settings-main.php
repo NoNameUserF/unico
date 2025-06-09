@@ -22,7 +22,7 @@ $user = selectOne('users', ['id' => $_SESSION['id']]);
 
     <div class="right-col">
       <div class="widgets">
-        <span>место для виджетов</span>
+        <span>Place for widgets</span>
       </div>
       <h1 class="settings-title">Settings</h1>
       <div class="settings-container">

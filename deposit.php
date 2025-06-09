@@ -93,11 +93,11 @@ $user = selectOne('users', ['id' => $_SESSION['id']]);
           </div>
           <div class="exchange-wrapper">
             <span class="exchange">Exchange:</span>
-            <span class="exchange-gray">140561516 hc$</span>
+            <span class="exchange-gray">7.85$</span>
           </div>
           <div class="comission-wrapper">
             <span class="comission">Сommission:</span>
-            <span class="comission-gray">0,1%</span>
+            <span class="comission-gray">0,3% - 3%</span>
           </div>
         </div>
         <div class="crypto-adress">
