@@ -22,9 +22,7 @@ const balance = document.querySelector('.balanceww');
 
 const errorBalance = document.querySelector('.errorBalance');
 function hideBlocks() {
-  crypto.style.display = 'none';
   card.style.display = 'none';
-  cryptoInfo.style.display = 'none';
 }
 if (crypto) {
   hideBlocks();
