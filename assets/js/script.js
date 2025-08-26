@@ -21,7 +21,10 @@ const acceptWallets = document.querySelector('.acceptWallets');
 const balance = document.querySelector('.balanceww');
 
 const errorBalance = document.querySelector('.errorBalance');
-
+function hideBlocks() {
+  crypto.style.display = 'none';
+  card.style.display = 'none';
+}
 if (crypto) {
   hideBlocks();
   choseCardPayment.addEventListener('click', e => {
