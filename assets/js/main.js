@@ -191,7 +191,12 @@ $('.strategy-text-opener').on('click', function () {
 });
 
 $('.ak-user-btn').on('click', function () {
-  $(this).parent().parent().parent().find('.ak-user-inner').toggleClass('ak-user-inner-active');
+  $(this)
+    .parent()
+    .parent()
+    .parent()
+    .find('.ak-user-inner')
+    .toggleClass('ak-user-inner-active');
   $(this).toggleClass('ak-user-btn-active');
 });
 
@@ -214,30 +219,30 @@ function copytext(el) {
 }
 
 //------------- КНОПКА-ПЕРЕКЛЮЧАТЕЛЬ В SECURITY
-$(function () {
-  $('.switch-btn').click(function (e, changeState) {
-    if (changeState === undefined) {
-      $(this).toggleClass('switch-on');
-    }
-    if ($(this).hasClass('switch-on')) {
-      $(this).trigger('on.switch');
-    } else {
-      $(this).trigger('off.switch');
-    }
-  });
+// $(function () {
+//   $('.switch-btn').click(function (e, changeState) {
+//     if (changeState === undefined) {
+//       $(this).toggleClass('switch-on');
+//     }
+//     if ($(this).hasClass('switch-on')) {
+//       $(this).trigger('on.switch');
+//     } else {
+//       $(this).trigger('off.switch');
+//     }
+//   });
 
-  $('.switch-btn').on('on.switch', function () {
-    console.log('Кнопка переключена в состояние on');
-  });
+//   $('.switch-btn').on('on.switch', function () {
+//     console.log('Кнопка переключена в состояние on');
+//   });
 
-  $('.switch-btn').on('off.switch', function () {
-    console.log('Кнопка переключена в состояние off');
-  });
+//   $('.switch-btn').on('off.switch', function () {
+//     console.log('Кнопка переключена в состояние off');
+//   });
 
-  $('.switch-btn').each(function () {
-    $(this).triggerHandler('click', false);
-  });
-});
+//   $('.switch-btn').each(function () {
+//     $(this).triggerHandler('click', false);
+//   });
+// });
 
 //------------- ЗАПРЕТ ПИСАТЬ В ИНПУТ БУКВЫ
 $('.phone').on('input', function () {
@@ -252,5 +257,6 @@ $('.phone').on('input', function () {
 const input = document.querySelector('#tel');
 
 window.intlTelInput(input, {
-  utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js',
+  utilsScript:
+    'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js',
 });

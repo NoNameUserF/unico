@@ -1,6 +1,6 @@
 <footer class="footer">
   <div class="container">
-    <span class="copyright">© 2023 Unico</span>
+    <span class="copyright">© 2025 Unico</span>
     <div class="rights-wrapper">
       <a href="#" class="privacy-policy">Privacy Policy</a>
       <a href="#" class="terms-n-conditions">Terms and Conditions</a>
