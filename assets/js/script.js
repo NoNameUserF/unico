@@ -21,11 +21,7 @@ const acceptWallets = document.querySelector('.acceptWallets');
 const balance = document.querySelector('.balanceww');
 
 const errorBalance = document.querySelector('.errorBalance');
-function hideBlocks() {
-  crypto.style.display = 'none';
-  card.style.display = 'none';
-  cryptoInfo.style.display = 'none';
-}
+
 if (crypto) {
   hideBlocks();
   choseCardPayment.addEventListener('click', e => {
@@ -57,7 +53,10 @@ if (withdrawCard) {
 }
 
 if (operationDetails) {
-  const userBalance = balance.textContent.slice(9, balance.textContent.length - 1);
+  const userBalance = balance.textContent.slice(
+    9,
+    balance.textContent.length - 1
+  );
   console.log(userBalance);
   operationDetails.style.display = 'none';
   errorBalance.style.display = 'none';

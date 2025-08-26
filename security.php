@@ -38,8 +38,8 @@ if (!isset($_SESSION['id'])) {
             pre-registered phone or email address.
           </p>
         </div>
-        <div class="df">
-          <div class="google-auth">
+        <div class="df" style="height:320px">
+          <div class="google-auth" style="height: 100%;">
             <h2>authentication</h2>
             <p>
               "When this option is enabled, you can log in to your account using your email address. Each time you sign
@@ -50,14 +50,14 @@ if (!isset($_SESSION['id'])) {
               authentication to add an extra layer of
               protection, or use email as your primary login method."
             </p>
-            <div class="switch-btn switch-on"></div>
+            <div role="button" aria-disabled="true" class="switch-btn switch-on"></div>
           </div>
-          <div class="sms-auth">
+          <div class="sms-auth" style="height: 100%;">
             <h2>SMS</h2>
             <p style="color : red;">
               This authentication method will be available in 30 days
             </p>
-            <div class="switch-btn"></div>
+            <div role="button" class="switch-btn" aria-disabled="true"></div>
           </div>
         </div>
       </div>
